@@ -15,198 +15,198 @@ random_perks_config = {
     trigger_reset = false,
     text_source = nil,
     asset_path = nil,
+    language = 'English',
 };
 
 random_perks_config.survivor_perks = {
-    { image = 'iconPerks_adrenaline',                   name_en = 'Adrenaline' },
-    { image = 'iconPerks_balancedLanding',              name_en = 'Balance Landing' },
-    { image = 'iconPerks_bond',                         name_en = 'Bond' },
-    { image = 'iconPerks_botanyKnowledge',              name_en = 'Botany Knowledge' },
-    { image = 'iconPerks_calmSpirit',                   name_en = 'Calm Spirit' },
+    { image = 'iconPerks_adrenaline',                   name_en = 'Adrenaline',                     name_jp = 'アドレナリン', },
+    { image = 'iconPerks_balancedLanding',              name_en = 'Balance Landing',                name_jp = 'スマートな着地'  },
+    { image = 'iconPerks_bond',                         name_en = 'Bond',                           name_jp = '絆' },
+    { image = 'iconPerks_botanyKnowledge',              name_en = 'Botany Knowledge',               name_jp = '植物学の知識' },
+    { image = 'iconPerks_calmSpirit',                   name_en = 'Calm Spirit',                    name_jp = '魂の平穏' },
 
-    { image = 'iconPerks_darkSense',                    name_en = 'Dark Sense' },
-    { image = 'iconPerks_dejaVu',                       name_en = 'DeJaVu' },
-    { image = 'iconPerks_empathy',                      name_en = 'Empathy' },
-    { image = 'iconPerks_hope',                         name_en = 'Hope' },
-    { image = 'iconPerks_ironWill',                     name_en = 'Iron Will' },
+    { image = 'iconPerks_darkSense',                    name_en = 'Dark Sense',                     name_jp = '闇の感覚' },
+    { image = 'iconPerks_dejaVu',                       name_en = 'DeJaVu',                         name_jp = 'デジャヴ' },
+    { image = 'iconPerks_empathy',                      name_en = 'Empathy',                        name_jp = '共感' },
+    { image = 'iconPerks_hope',                         name_en = 'Hope',                           name_jp = '希望' },
+    { image = 'iconPerks_ironWill',                     name_en = 'Iron Will',                      name_jp = '鋼の意思' },
 -- 10
-    { image = 'iconPerks_kindred',                      name_en = 'Kindred' },
-    { image = 'iconPerks_leader',                       name_en = 'Leader' },
-    { image = 'iconPerks_lightweight',                  name_en = 'Lightweight' },
-    { image = 'iconPerks_noOneLeftBehind',              name_en = 'No One Left Behind' },
-    { image = 'iconPerks_plunderersInstinct',           name_en = 'Plunderers Instinct' },
+    { image = 'iconPerks_kindred',                      name_en = 'Kindred',                        name_jp = '血族' },
+    { image = 'iconPerks_leader',                       name_en = 'Leader',                         name_jp = 'リーダー' },
+    { image = 'iconPerks_lightweight',                  name_en = 'Lightweight',                    name_jp = '身軽' },
+    { image = 'iconPerks_noOneLeftBehind',              name_en = 'No One Left Behind',             name_jp = '誰も見捨てはしない' },
+    { image = 'iconPerks_plunderersInstinct',           name_en = 'Plunderers Instinct',            name_jp = 'コソ泥の本能' },
 
-    { image = 'iconPerks_premonition',                  name_en = 'Premonition' },
-    { image = 'iconPerks_proveThyself',                 name_en = 'Prove Thyself' },
-    { image = 'iconPerks_quickAndQuiet',                name_en = 'Quick and Quiet' },
-    { image = 'iconPerks_resilience',                   name_en = 'Resilience' },
-    { image = 'iconPerks_saboteur',                     name_en = 'Saboteur' },
+    { image = 'iconPerks_premonition',                  name_en = 'Premonition',                    name_jp = '予感' },
+    { image = 'iconPerks_proveThyself',                 name_en = 'Prove Thyself',                  name_jp = '有能の証明' },
+    { image = 'iconPerks_quickAndQuiet',                name_en = 'Quick and Quiet',                name_jp = '素早く静かに' },
+    { image = 'iconPerks_resilience',                   name_en = 'Resilience',                     name_jp = '逆境魂' },
+    { image = 'iconPerks_saboteur',                     name_en = 'Saboteur',                       name_jp = 'サボタージュ' },
 -- 20
-    { image = 'iconPerks_selfCare',                     name_en = 'Self Care' },
-    { image = 'iconPerks_slipperyMeat',                 name_en = 'Slippery Meat' },
-    { image = 'iconPerks_smallGame',                    name_en = 'Small Game' },
-    { image = 'iconPerks_spineChill',                   name_en = 'Spine Chill' },
-    { image = 'iconPerks_sprintBurst',                  name_en = 'Sprint Burst' },
+    { image = 'iconPerks_selfCare',                     name_en = 'Self Care',                      name_jp = 'セルフケア' },
+    { image = 'iconPerks_slipperyMeat',                 name_en = 'Slippery Meat',                  name_jp = 'ツルツルとした肉体' },
+    { image = 'iconPerks_smallGame',                    name_en = 'Small Game',                     name_jp = '小さな獲物' },
+    { image = 'iconPerks_spineChill',                   name_en = 'Spine Chill',                    name_jp = '凍りつく背筋' },
+    { image = 'iconPerks_sprintBurst',                  name_en = 'Sprint Burst',                   name_jp = '全力疾走' },
 
-    { image = 'iconPerks_streetwise',                   name_en = 'Streetwise' },
-    { image = 'iconPerks_thisIsNotHappening',           name_en = 'This is not happening' },
-    { image = 'iconPerks_urbanEvasion',                 name_en = 'Urban Evasion' },
-    { image = 'iconPerks_wellMakeIt',                   name_en = 'We\'ll make it' },
-    { image = 'Ash/iconPerks_buckleUp',                 name_en = 'Buckle Up' },
+    { image = 'iconPerks_streetwise',                   name_en = 'Streetwise',                     name_jp = '都会の生存術' },
+    { image = 'iconPerks_thisIsNotHappening',           name_en = 'This is not happening',          name_jp = '痛みも気から' },
+    { image = 'iconPerks_urbanEvasion',                 name_en = 'Urban Evasion',                  name_jp = '都会の逃走術' },
+    { image = 'iconPerks_wellMakeIt',                   name_en = 'We\'ll make it',                 name_jp = 'きっとやり遂げる' },
+    { image = 'Ash/iconPerks_buckleUp',                 name_en = 'Buckle Up',                      name_jp = 'ベルトを締めろ！' },
 -- 30
-    { image = 'Ash/iconPerks_flipFlop',                 name_en = 'Flip Flop' },
-    { image = 'Ash/iconPerks_mettleOfMan',              name_en = 'Mettle of Man' },
-    { image = 'DLC2/iconPerks_decisiveStrike',          name_en = 'Decisive Strike' },
-    { image = 'DLC2/iconPerks_objectOfObsession',       name_en = 'Object of Obsession' },
-    { image = 'DLC2/iconPerks_soleSurvivor',            name_en = 'Sole Survivor' },
+    { image = 'Ash/iconPerks_flipFlop',                 name_en = 'Flip Flop',                      name_jp = 'フリップ・フロップ' },
+    { image = 'Ash/iconPerks_mettleOfMan',              name_en = 'Mettle of Man',                  name_jp = '英雄の奮起' },
+    { image = 'DLC2/iconPerks_decisiveStrike',          name_en = 'Decisive Strike',                name_jp = '決死の一撃' },
+    { image = 'DLC2/iconPerks_objectOfObsession',       name_en = 'Object of Obsession',            name_jp = '執念の対象' },
+    { image = 'DLC2/iconPerks_soleSurvivor',            name_en = 'Sole Survivor',                  name_jp = '唯一の生存者' },
 
-    { image = 'DLC3/iconPerks_aceInTheHole',            name_en = 'Ace in the Hole' },
-    { image = 'DLC3/iconPerks_openHanded',              name_en = 'Open Handed' },
-    { image = 'DLC3/iconPerks_upTheAnte',               name_en = 'Up the Ante' },
-    { image = 'DLC4/iconPerks_alert',                   name_en = 'Alert' },
-    { image = 'DLC4/iconPerks_lithe',                   name_en = 'Lithe' },
+    { image = 'DLC3/iconPerks_aceInTheHole',            name_en = 'Ace in the Hole',                name_jp = '最後の切り札' },
+    { image = 'DLC3/iconPerks_openHanded',              name_en = 'Open Handed',                    name_jp = '手札公開' },
+    { image = 'DLC3/iconPerks_upTheAnte',               name_en = 'Up the Ante',                    name_jp = '賭け金のレイズ' },
+    { image = 'DLC4/iconPerks_alert',                   name_en = 'Alert',                          name_jp = '警戒' },
+    { image = 'DLC4/iconPerks_lithe',                   name_en = 'Lithe',                          name_jp = 'しなやか' },
 -- 40
-    { image = 'DLC4/iconPerks_technician',              name_en = 'Technician' },
-    { image = 'DLC5/iconPerks_DeadHard',                name_en = 'Dead Hard' },
-    { image = 'DLC5/iconPerks_NoMither',                name_en = 'No Mither' },
-    { image = 'DLC5/iconPerks_WereGonnaLiveForever',    name_en = 'We\'re gonna Live forever' },
-    { image = 'England/iconPerks_pharmacy',             name_en = 'Pharmacy' },
+    { image = 'DLC4/iconPerks_technician',              name_en = 'Technician',                     name_jp = 'テクニシャン' },
+    { image = 'DLC5/iconPerks_DeadHard',                name_en = 'Dead Hard',                      name_jp = 'デッド・ハード' },
+    { image = 'DLC5/iconPerks_NoMither',                name_en = 'No Mither',                      name_jp = '弱音はナシだ' },
+    { image = 'DLC5/iconPerks_WereGonnaLiveForever',    name_en = 'We\'re gonna Live forever',      name_jp = 'ずっと一緒だ' },
+    { image = 'England/iconPerks_pharmacy',             name_en = 'Pharmacy',                       name_jp = '調剤学' },
 
-    { image = 'England/iconPerks_vigil',                name_en = 'Vigil' },
-    { image = 'England/iconPerks_wakeUp',               name_en = 'wake up' },
-    { image = 'Finland/iconPerks_detectivesHunch',      name_en = 'Detectives Hunch' },
-    { image = 'Finland/iconPerks_stakeOut',             name_en = 'Stake Out' },
-    { image = 'Finland/iconPerks_tenacity',             name_en = 'Tenacity' },
+    { image = 'England/iconPerks_vigil',                name_en = 'Vigil',                          name_jp = '寝ずの番' },
+    { image = 'England/iconPerks_wakeUp',               name_en = 'wake up',                        name_jp = '目を覚ませ！' },
+    { image = 'Finland/iconPerks_detectivesHunch',      name_en = 'Detectives Hunch',               name_jp = '張り込み' },
+    { image = 'Finland/iconPerks_stakeOut',             name_en = 'Stake Out',                      name_jp = '刑事の直感' },
+    { image = 'Finland/iconPerks_tenacity',             name_en = 'Tenacity',                       name_jp = '執念' },
 -- 50
-    { image = 'Haiti/iconPerks_autodidact',             name_en = 'Autodidact' },
-    { image = 'Haiti/iconPerks_deliverance',            name_en = 'Deliverence' },
-    { image = 'Haiti/iconPerks_diversion',              name_en = 'Diversion' },
-    { image = 'Kate/iconPerks_boilOver',                name_en = 'Boil Over' },
-    { image = 'Kate/iconPerks_danceWithMe',             name_en = 'Dance with me' },
+    { image = 'Haiti/iconPerks_autodidact',             name_en = 'Autodidact',                     name_jp = '独学者' },
+    { image = 'Haiti/iconPerks_deliverance',            name_en = 'Deliverence',                    name_jp = '解放' },
+    { image = 'Haiti/iconPerks_diversion',              name_en = 'Diversion',                      name_jp = '陽動' },
+    { image = 'Kate/iconPerks_boilOver',                name_en = 'Boil Over',                      name_jp = 'ボイルオーバー' },
+    { image = 'Kate/iconPerks_danceWithMe',             name_en = 'Dance with me',                  name_jp = 'ダンス・ウィズ・ミー' },
 
-    { image = 'Kate/iconPerks_windowsOfOpportunity',    name_en = 'Windows of Opportunity' },
-    { image = 'Kenya/iconPerks_aftercare',              name_en = 'Aftercare' },
-    { image = 'Kenya/iconPerks_breakdown',              name_en = 'Breakdown' },
-    { image = 'Kenya/iconPerks_distortion',             name_en = 'Distortion' },
-    { image = 'L4D/iconPerks_borrowedTime',             name_en = 'Borrowed Time' },
+    { image = 'Kate/iconPerks_windowsOfOpportunity',    name_en = 'Windows of Opportunity',         name_jp = 'ウィンドウズ・オブ・オポチュニティ' },
+    { image = 'Kenya/iconPerks_aftercare',              name_en = 'Aftercare',                      name_jp = 'アフターケア' },
+    { image = 'Kenya/iconPerks_breakdown',              name_en = 'Breakdown',                      name_jp = 'ブレイクダウン' },
+    { image = 'Kenya/iconPerks_distortion',             name_en = 'Distortion',                     name_jp = 'ディストーション' },
+    { image = 'L4D/iconPerks_borrowedTime',             name_en = 'Borrowed Time',                  name_jp = '与えられた猶予' },
 -- 60
-    { image = 'L4D/iconPerks_leftBehind',               name_en = 'Left Behind' },
-    { image = 'L4D/iconPerks_unbreakable',              name_en = 'Unbreakable' },
-    { image = 'Mali/iconPerks_headOn',                  name_en = 'Head On' },
-    { image = 'Mali/iconPerks_poised',                  name_en = 'Poised' },
-    { image = 'Mali/iconPerks_solidarity',              name_en = 'Solidarity' },
+    { image = 'L4D/iconPerks_leftBehind',               name_en = 'Left Behind',                    name_jp = '置き去りにされた者'  },
+    { image = 'L4D/iconPerks_unbreakable',              name_en = 'Unbreakable',                    name_jp = '不滅'  },
+    { image = 'Mali/iconPerks_headOn',                  name_en = 'Head On',                        name_jp = '真っ向勝負'  },
+    { image = 'Mali/iconPerks_poised',                  name_en = 'Poised',                         name_jp = '平常心'  },
+    { image = 'Mali/iconPerks_solidarity',              name_en = 'Solidarity',                     name_jp = '連帯感'  },
 
-    { image = 'Qatar/iconPerks_babySitter',             name_en = 'Baby Sitter' },
-    { image = 'Qatar/iconPerks_betterTogether',         name_en = 'Better Together' },
-    { image = 'Qatar/iconPerks_fixated',                name_en = 'Fixated' },
-    { image = 'Qatar/iconPerks_innerStrength',          name_en = 'Inner Strength' },
-    { image = 'Qatar/iconPerks_secondWind',             name_en = 'Second Wind' },
+    { image = 'Qatar/iconPerks_babySitter',             name_en = 'Baby Sitter',                    name_jp = 'ベビーシッター'  },
+    { image = 'Qatar/iconPerks_betterTogether',         name_en = 'Better Together',                name_jp = '一緒にいよう'  },
+    { image = 'Qatar/iconPerks_fixated',                name_en = 'Fixated',                        name_jp = '執着心'  },
+    { image = 'Qatar/iconPerks_innerStrength',          name_en = 'Inner Strength',                 name_jp = '内なる力'  },
+    { image = 'Qatar/iconPerks_secondWind',             name_en = 'Second Wind',                    name_jp = 'セカンドウインド'  },
 -- 70
-    { image = 'Qatar/iconPerks_camaraderie',            name_en = 'Camaraderie' },
-    { image = 'Sweden/iconPerks_anyMeansNecessary',     name_en = 'Any means Necessary' },
-    { image = 'Sweden/iconPerks_breakout',              name_en = 'Breakout' },
-    { image = 'Sweden/iconPerks_luckyBreak',            name_en = 'Lucky Break' },
-    { image = 'Ukraine/iconPerks_forThePeople',         name_en = 'For the People' },
+    { image = 'Qatar/iconPerks_camaraderie',            name_en = 'Camaraderie',                    name_jp = '仲間意識'  },
+    { image = 'Sweden/iconPerks_anyMeansNecessary',     name_en = 'Any means Necessary',            name_jp = '強硬手段'  },
+    { image = 'Sweden/iconPerks_breakout',              name_en = 'Breakout',                       name_jp = '突破'  },
+    { image = 'Sweden/iconPerks_luckyBreak',            name_en = 'Lucky Break',                    name_jp = '怪我の功名'  },
+    { image = 'Ukraine/iconPerks_forThePeople',         name_en = 'For the People',                 name_jp = '人々のために'  },
 
-    { image = 'Ukraine/iconPerks_offTheRecord',         name_en = 'Off the Record' },
-    { image = 'Ukraine/iconPerks_redHerring',           name_en = 'Red Herring' },
-    { image = 'Wales/iconPerks_bloodPact',              name_en = 'Blood Pact' },
-    { image = 'Wales/iconPerks_repressedAlliance',      name_en = 'Repressed Alliance' },
-    { image = 'Wales/iconPerks_soulGuard',              name_en = 'Soul Guard' },
+    { image = 'Ukraine/iconPerks_offTheRecord',         name_en = 'Off the Record',                 name_jp = 'オフレコ'  },
+    { image = 'Ukraine/iconPerks_redHerring',           name_en = 'Red Herring',                    name_jp = 'おとり'  },
+    { image = 'Wales/iconPerks_bloodPact',              name_en = 'Blood Pact',                     name_jp = '血の協定'  },
+    { image = 'Wales/iconPerks_repressedAlliance',      name_en = 'Repressed Alliance',             name_jp = '抑圧の同盟'  },
+    { image = 'Wales/iconPerks_soulGuard',              name_en = 'Soul Guard',                     name_jp = 'ソウルガード'  },
 -- 80
 };
 random_perks_config.survivor_perk_count = 80;
 
 random_perks_config.killer_perks = {
-    { image = 'iconPerks_agitation',                    name_en = 'Agitation' },
-    { image = 'iconPerks_aNursesCalling',               name_en = 'A Nurse\'s Calling' },
-    { image = 'iconPerks_bitterMurmur',                 name_en = 'Bitt4er Murmur' },
-    { image = 'iconPerks_bloodhound',                   name_en = 'Bloodhound' },
-    { image = 'iconPerks_brutalStrength',               name_en = 'Brutal Strength' },
+    { image = 'iconPerks_agitation',                    name_en = 'Agitation',                      name_jp = '興奮' },
+    { image = 'iconPerks_aNursesCalling',               name_en = 'A Nurse\'s Calling',             name_jp = '看護婦の使命' },
+    { image = 'iconPerks_bitterMurmur',                 name_en = 'Bitter Murmur',                  name_jp = '憎悪の囁き' },
+    { image = 'iconPerks_bloodhound',                   name_en = 'Bloodhound',                     name_jp = '血の追跡者' },
+    { image = 'iconPerks_brutalStrength',               name_en = 'Brutal Strength',                name_jp = '野蛮な力' },
 
-    { image = 'iconPerks_deerstalker',                  name_en = 'Deerstalker' },
-    { image = 'iconPerks_distressing',                  name_en = 'Distressing' },
-    { image = 'iconPerks_enduring',                     name_en = 'Enduring' },
-    { image = 'iconPerks_insidious',                    name_en = 'Insidious' },
-    { image = 'iconPerks_ironGrasp',                    name_en = 'Iron Grasp' },
+    { image = 'iconPerks_deerstalker',                  name_en = 'Deerstalker',                    name_jp = '忍び寄る者' },
+    { image = 'iconPerks_distressing',                  name_en = 'Distressing',                    name_jp = '苦悶の根源' },
+    { image = 'iconPerks_enduring',                     name_en = 'Enduring',                       name_jp = '不屈' },
+    { image = 'iconPerks_insidious',                    name_en = 'Insidious',                      name_jp = '狡猾' },
+    { image = 'iconPerks_ironGrasp',                    name_en = 'Iron Grasp',                     name_jp = '鋼の握力' },
 -- 10
-    { image = 'iconPerks_lightborn',                    name_en = 'Lightborn' },
-    { image = 'iconPerks_monstrousShrine',              name_en = 'Monstrous Shrine' },
-    { image = 'iconPerks_noOneEscapesDeath',            name_en = 'No One Escapes the Death' },
-    { image = 'iconPerks_predator',                     name_en = 'Predator' },
-    { image = 'iconPerks_shadowborn',                   name_en = 'Shadowborn' },
+    { image = 'iconPerks_lightborn',                    name_en = 'Lightborn',                      name_jp = '光より出でし者' },
+    { image = 'iconPerks_monstrousShrine',              name_en = 'Monstrous Shrine',               name_jp = '異形の祭壇' },
+    { image = 'iconPerks_noOneEscapesDeath',            name_en = 'No One Escapes the Death',       name_jp = '呪術・誰も死から逃れられない' },
+    { image = 'iconPerks_predator',                     name_en = 'Predator',                       name_jp = '捕食者' },
+    { image = 'iconPerks_shadowborn',                   name_en = 'Shadowborn',                     name_jp = '闇より出でし者' },
 
-    { image = 'iconPerks_sloppyButcher',                name_en = 'Sloppy Butcher' },
-    { image = 'iconPerks_spiesFromTheShadows',          name_en = 'Spies from the Shadows' },
-    { image = 'iconPerks_stridor',                      name_en = 'Stridor' },
-    { image = 'iconPerks_thatanophobia',                name_en = 'Thatanophobia' },
-    { image = 'iconPerks_tinkerer',                     name_en = 'Tinkerer' },
+    { image = 'iconPerks_sloppyButcher',                name_en = 'Sloppy Butcher',                 name_jp = 'ずさんな肉屋' },
+    { image = 'iconPerks_spiesFromTheShadows',          name_en = 'Spies from the Shadows',         name_jp = '影の密偵' },
+    { image = 'iconPerks_stridor',                      name_en = 'Stridor',                        name_jp = '喘鳴' },
+    { image = 'iconPerks_thatanophobia',                name_en = 'Thatanophobia',                  name_jp = '死恐怖症' },
+    { image = 'iconPerks_tinkerer',                     name_en = 'Tinkerer',                       name_jp = 'ガラクタいじり' },
 -- 20
-    { image = 'iconPerks_underperform',                 name_en = 'Underperform' },
-    { image = 'iconPerks_unnervingPresence',            name_en = 'Unnerving Presence' },
-    { image = 'iconPerks_unrelenting',                  name_en = 'Unrelenting' },
-    { image = 'iconPerks_whispers',                     name_en = 'Whispers' },
-    { image = 'Cannibal/iconPerks_BBQAndChili',         name_en = 'BBQ and Chili' },
+    { image = 'iconPerks_unnervingPresence',            name_en = 'Unnerving Presence',             name_jp = '不安の元凶' },
+    { image = 'iconPerks_unrelenting',                  name_en = 'Unrelenting',                    name_jp = '無慈悲' },
+    { image = 'iconPerks_whispers',                     name_en = 'Whispers',                       name_jp = '囁き' },
+    { image = 'Cannibal/iconPerks_BBQAndChili',         name_en = 'BBQ and Chili',                  name_jp = 'バーベキュー＆チリ' },
+    { image = 'Wales/iconPerks_trailOfTorment',         name_en = 'Trail of Torment',               name_jp = '煩悶のトレイル' },
 
-    { image = 'Cannibal/iconPerks_franklinsLoss',       name_en = 'Franklins Loss' },
-    { image = 'Cannibal/iconPerks_knockOut',            name_en = 'Knock Out' },
-    { image = 'DLC2/iconPerks_dyingLight',              name_en = 'Dying Light' },
-    { image = 'DLC2/iconPerks_playWithYourFood',        name_en = 'Play with your Food' },
-    { image = 'DLC2/iconPerks_saveTheBestForLast',      name_en = 'Save the best for Last' },
+    { image = 'Cannibal/iconPerks_franklinsLoss',       name_en = 'Franklins Loss',                 name_jp = 'フランクリンの悲劇' },
+    { image = 'Cannibal/iconPerks_knockOut',            name_en = 'Knock Out',                      name_jp = 'ノックアウト' },
+    { image = 'DLC2/iconPerks_dyingLight',              name_en = 'Dying Light',                    name_jp = '消えゆく灯' },
+    { image = 'DLC2/iconPerks_playWithYourFood',        name_en = 'Play with your Food',            name_jp = '弄ばれる獲物' },
+    { image = 'DLC2/iconPerks_saveTheBestForLast',      name_en = 'Save the best for Last',         name_jp = '最後のお楽しみ' },
 -- 30
-    { image = 'DLC3/iconPerks_devourHope',              name_en = 'Devour Hope' },
-    { image = 'DLC3/iconPerks_ruin',                    name_en = 'Ruin' },
-    { image = 'DLC3/iconPerks_theThirdSeal',            name_en = 'The third Seal' },
-    { image = 'DLC3/iconPerks_thrillOfTheHunt',         name_en = 'Thrill of the Hunt' },
-    { image = 'DLC4/iconPerks_generatorOvercharge',     name_en = 'Generator Overcharge' },
+    { image = 'DLC3/iconPerks_devourHope',              name_en = 'Hex: Devour Hope',               name_jp = '呪術・貪られる希望' },
+    { image = 'DLC3/iconPerks_ruin',                    name_en = 'Hex: Ruin',                      name_jp = '呪術・破滅' },
+    { image = 'DLC3/iconPerks_theThirdSeal',            name_en = 'Hex: The third Seal',            name_jp = '呪術・第三の封印' },
+    { image = 'DLC3/iconPerks_thrillOfTheHunt',         name_en = 'Hex: Thrill of the Hunt',        name_jp = '呪術・狩りの興奮' },
+    { image = 'DLC4/iconPerks_generatorOvercharge',     name_en = 'Generator Overcharge',           name_jp = 'オーバーチャージ' },
 
-    { image = 'DLC4/iconPerks_monitorAndAbuse',         name_en = 'Monitor and Abuse' },
-    { image = 'DLC4/iconPerks_overwhelmingPresence',    name_en = 'Overhelming Presence' },
-    { image = 'DLC5/iconPerks_BeastOfPrey',             name_en = 'Beast of Prey' },
-    { image = 'DLC5/iconPerks_HuntressLullaby',         name_en = 'Huntress Lullaby' },
-    { image = 'DLC5/iconPerks_TerritorialImperative',   name_en = 'Territorial Imperative' },
+    { image = 'DLC4/iconPerks_monitorAndAbuse',         name_en = 'Monitor and Abuse',              name_jp = '観察＆虐待' },
+    { image = 'DLC4/iconPerks_overwhelmingPresence',    name_en = 'Overhelming Presence',           name_jp = '圧倒的存在感' },
+    { image = 'DLC5/iconPerks_BeastOfPrey',             name_en = 'Beast of Prey',                  name_jp = '猛獣' },
+    { image = 'DLC5/iconPerks_HuntressLullaby',         name_en = 'Hex: Huntress Lullaby',          name_jp = '呪術・女狩人の子守歌' },
+    { image = 'DLC5/iconPerks_TerritorialImperative',   name_en = 'Territorial Imperative',         name_jp = '縄張り意識' },
 -- 40
-    { image = 'England/iconPerks_bloodWarden',          name_en = 'Blood Warden' },
-    { image = 'England/iconPerks_fireUp',               name_en = 'Fire Up' },
-    { image = 'England/iconPerks_rememberMe',           name_en = 'Rember Me' },
-    { image = 'Finland/iconPerks_hangmansTrick',        name_en = 'Hangmans Trick' },
-    { image = 'Finland/iconPerks_makeYourChoice',       name_en = 'Make your Choice' },
+    { image = 'England/iconPerks_bloodWarden',          name_en = 'Blood Warden',                   name_jp = '血の番人' },
+    { image = 'England/iconPerks_fireUp',               name_en = 'Fire Up',                        name_jp = 'ファイヤー・アップ' },
+    { image = 'England/iconPerks_rememberMe',           name_en = 'Rember Me',                      name_jp = 'リメンバー・ミー' },
+    { image = 'Finland/iconPerks_hangmansTrick',        name_en = 'Hangman\'s Trick',               name_jp = '処刑人の妙技' },
+    { image = 'Finland/iconPerks_makeYourChoice',       name_en = 'Make your Choice',               name_jp = '選択は君次第だ' },
 
-    { image = 'Finland/iconPerks_surveillance',         name_en = 'Surveillance' },
-    { image = 'Guam/iconPerks_bamboozle',               name_en = 'Bamboozle' },
-    { image = 'Guam/iconPerks_coulrophobia',            name_en = 'Coulrophobia' },
-    { image = 'Guam/iconPerks_popGoesTheWeasel',        name_en = 'Pop goes the Weasel' },
-    { image = 'Haiti/iconPerks_hatred',                 name_en = 'Rancor' },
+    { image = 'Finland/iconPerks_surveillance',         name_en = 'Surveillance',                   name_jp = '監視' },
+    { image = 'Guam/iconPerks_bamboozle',               name_en = 'Bamboozle',                      name_jp = 'まやかし' },
+    { image = 'Guam/iconPerks_coulrophobia',            name_en = 'Coulrophobia',                   name_jp = 'ピエロ恐怖症' },
+    { image = 'Guam/iconPerks_popGoesTheWeasel',        name_en = 'Pop goes the Weasel',            name_jp = 'イタチが飛び出した' },
+    { image = 'Haiti/iconPerks_hatred',                 name_en = 'Rancor',                         name_jp = '怨恨' },
 -- 50
-    { image = 'Haiti/iconPerks_hauntedGround',          name_en = 'Haunted Ground' },
-    { image = 'Haiti/iconPerks_spiritFury',             name_en = 'Spirit Fury' },
-    { image = 'Kenya/iconPerks_discordance',            name_en = 'Discordance' },
-    { image = 'Kenya/iconPerks_ironMaiden',             name_en = 'Iron Maiden' },
-    { image = 'Kenya/iconPerks_madGrit',                name_en = 'Mad Grit' },
+    { image = 'Haiti/iconPerks_hauntedGround',          name_en = 'Hex: Haunted Ground',            name_jp = '呪術・霊障の地' },
+    { image = 'Haiti/iconPerks_spiritFury',             name_en = 'Spirit Fury',                    name_jp = '怨霊の怒り' },
+    { image = 'Kenya/iconPerks_discordance',            name_en = 'Discordance',                    name_jp = '不協和音' },
+    { image = 'Kenya/iconPerks_ironMaiden',             name_en = 'Iron Maiden',                    name_jp = 'アイアンメイデン' },
+    { image = 'Kenya/iconPerks_madGrit',                name_en = 'Mad Grit',                       name_jp = '狂気の根性' },
 
-    { image = 'Mali/iconPerks_corruptIntervention',     name_en = 'Corrupt Intervention' },
-    { image = 'Mali/iconPerks_darkDevotion',            name_en = 'Dark Devotion' },
-    { image = 'Mali/iconPerks_infectiousFright',        name_en = 'Infectious Fright' },
-    { image = 'Oman/iconPerks_furtiveChase',            name_en = 'Furtive Chase' },
-    { image = 'Oman/iconPerks_imAllEars',               name_en = 'Im all Ears' },
+    { image = 'Mali/iconPerks_corruptIntervention',     name_en = 'Corrupt Intervention',           name_jp = '堕落の介入' },
+    { image = 'Mali/iconPerks_darkDevotion',            name_en = 'Dark Devotion',                  name_jp = '闇の信仰心' },
+    { image = 'Mali/iconPerks_infectiousFright',        name_en = 'Infectious Fright',              name_jp = '伝播する怖気' },
+    { image = 'Oman/iconPerks_furtiveChase',            name_en = 'Furtive Chase',                  name_jp = '隠密の追跡' },
+    { image = 'Oman/iconPerks_imAllEars',               name_en = 'I\'m all Ears',                  name_jp = '地獄耳' },
 -- 60
-    { image = 'Oman/iconPerks_thrillingTremors',        name_en = 'Thrilling Tremors' },
-    { image = 'Qatar/iconPerks_cruelConfinement',       name_en = 'Cruel Confinement' },
-    { image = 'Qatar/iconPerks_mindBreaker',            name_en = 'Mind Breaker' },
-    { image = 'Qatar/iconPerks_surge',                  name_en = 'Surge' },
-    { image = 'Sweden/iconPerks_bloodEcho',             name_en = 'Blood Echo' },
+    { image = 'Oman/iconPerks_thrillingTremors',        name_en = 'Thrilling Tremors',              name_jp = '戦慄' },
+    { image = 'Qatar/iconPerks_cruelConfinement',       name_en = 'Cruel Confinement',              name_jp = '無慈悲の極地' },
+    { image = 'Qatar/iconPerks_mindBreaker',            name_en = 'Mind Breaker',                   name_jp = 'マインドブレーカー' },
+    { image = 'Qatar/iconPerks_surge',                  name_en = 'Surge',                          name_jp = 'サージ' },
+    { image = 'Sweden/iconPerks_bloodEcho',             name_en = 'Blood Echo',                     name_jp = '血の共鳴' },
 
-    { image = 'Sweden/iconPerks_nemesis',               name_en = 'Nemesis' },
-    { image = 'Sweden/iconPerks_zanshinTactics',        name_en = 'Zanshin Tactics' },
-    { image = 'Ukraine/iconPerks_deadManSwitch',        name_en = 'Dead Man Switch' },
-    { image = 'Ukraine/iconPerks_gearHead',             name_en = 'Gear Head' },
-    { image = 'Ukraine/iconPerks_hexRetribution',       name_en = 'Hex: Retribution' },
+    { image = 'Sweden/iconPerks_nemesis',               name_en = 'Nemesis',                        name_jp = '天誅' },
+    { image = 'Sweden/iconPerks_zanshinTactics',        name_en = 'Zanshin Tactics',                name_jp = '残心の戦術' },
+    { image = 'Ukraine/iconPerks_deadManSwitch',        name_en = 'Dead Man Switch',                name_jp = '死人のスイッチ' },
+    { image = 'Ukraine/iconPerks_gearHead',             name_en = 'Gear Head',                      name_jp = '変速機' },
+    { image = 'Ukraine/iconPerks_hexRetribution',       name_en = 'Hex: Retribution',               name_jp = '呪術：報復' },
 -- 70
-    { image = 'Wales/iconPerks_deathbound',             name_en = 'Deathound' },
-    { image = 'Wales/iconPerks_forcedPenance',          name_en = 'Forced Penance' },
-    { image = 'Wales/iconPerks_trailOfTorment',         name_en = 'Trail of Torment' },
+    { image = 'Wales/iconPerks_deathbound',             name_en = 'Deathound',                      name_jp = 'デスバウンド' },
+    { image = 'Wales/iconPerks_forcedPenance',          name_en = 'Forced Penance',                 name_jp = '強制苦行' },
 };
-random_perks_config.killer_perk_count = 73;
+random_perks_config.killer_perk_count = 72;
 
 function set_text(text)
     if random_perks_config.text_source == nil then
@@ -338,11 +338,20 @@ source_def.video_render = function(data, effect)
 
         random_perks_config.loops = random_perks_config.loops + 1;
         if random_perks_config.loops == 50 then
-            local str = random_perks_config.random_perks[random_indexes[1]].name_en;
-            str = str .. "\n" ..  random_perks_config.random_perks[random_indexes[2]].name_en;
-            str = str .. "\n" .. random_perks_config.random_perks[random_indexes[3]].name_en;
-            str = str .. "\n" .. random_perks_config.random_perks[random_indexes[4]].name_en;
-            set_text(str);
+            if random_perks_config.language == '日本語' then
+                local str = random_perks_config.random_perks[random_indexes[1]].name_jp;
+                str = str .. "\n" ..  random_perks_config.random_perks[random_indexes[2]].name_jp;
+                str = str .. "\n" .. random_perks_config.random_perks[random_indexes[3]].name_jp;
+                str = str .. "\n" .. random_perks_config.random_perks[random_indexes[4]].name_jp;
+                set_text(str);
+            else
+                local str = random_perks_config.random_perks[random_indexes[1]].name_en;
+                str = str .. "\n" ..  random_perks_config.random_perks[random_indexes[2]].name_en;
+                str = str .. "\n" .. random_perks_config.random_perks[random_indexes[3]].name_en;
+                str = str .. "\n" .. random_perks_config.random_perks[random_indexes[4]].name_en;
+                set_text(str);             
+            end
+
             -- clean up
             random_perks_config.loops = 0;
             random_perks_config.random_perks = nil;
@@ -411,6 +420,7 @@ end
 function script_update(settings)
     random_perks_config.text_source = obs.obs_data_get_string(settings, "source");
     random_perks_config.asset_path = obs.obs_data_get_string(settings, "asset_path") .. '\\';
+    random_perks_config.language = obs.obs_data_get_string(settings, "lang");
     if random_perks_config.asset_path == '.' then
         random_perks_config.asset_path = script_path();
     end
@@ -459,9 +469,12 @@ function script_properties()
 				obs.obs_property_list_add_string(p, name, name)
 			end
 		end
-	end
-	obs.source_list_release(sources)
+    end
+    obs.source_list_release(sources)
 
+    p = obs.obs_properties_add_list(props, "lang", "Language", obs.OBS_COMBO_TYPE_EDITABLE, obs.OBS_COMBO_FORMAT_STRING);
+    obs.obs_property_list_add_string(p, "English", "en");
+    obs.obs_property_list_add_string(p, "日本語", "jp");
 	obs.obs_properties_add_text(props, "asset_path", "Asset Path", obs.OBS_TEXT_DEFAULT)
     obs.obs_properties_add_button(props, "survivor_random_perk_button", "Survivor", survivor_button_clicked)
     obs.obs_properties_add_button(props, "killer_random_perk_button", "Killer", killer_button_clicked)

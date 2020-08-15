@@ -19,6 +19,7 @@ random_perks_config = {
     language = 1,
     description = "Adds a \"Lua Random Perk\" source which draws an animated random perk choosing.\nCreated by Mike Rohsoft",
     name = "Lua DbD Random Perks",
+    languages = { 'English', '日本語', 'Deutsch' },
 };
 
 function perk_path(image_name) return random_perks_config.asset_path .. "Perks/" .. image_name .. ".png" end
@@ -38,37 +39,23 @@ function image_source_load(image, file)
 	obs.obs_enter_graphics();
 	obs.gs_image_file_free(image);
 	obs.obs_leave_graphics();
-
 	obs.gs_image_file_init(image, file);
-
 	obs.obs_enter_graphics();
 	obs.gs_image_file_init_texture(image);
 	obs.obs_leave_graphics();
-
 	if not image.loaded then print("failed to load texture " .. file) end
 end
 
 function reset(data)
     if data == nil or random_perks_config.asset_path == nil then return end
-    image_source_load(data.image[1], perk_path("Missing"));
-    image_source_load(data.image[2], perk_path("Missing"));
-    image_source_load(data.image[3], perk_path("Missing"));
-    image_source_load(data.image[4], perk_path("Missing"));
+    for i = 1, 4, 1 do image_source_load(data[i], perk_path("Missing")) end
     return data;
 end
 
 source_def.get_name = function() return random_perks_config.name end
 
 source_def.create = function(source, settings)
-	local data = {
-        image = {
-            obs.gs_image_file(),
-            obs.gs_image_file(),
-            obs.gs_image_file(),
-            obs.gs_image_file(),
-        },
-    };
-	return reset(data);
+	return reset({ obs.gs_image_file(), obs.gs_image_file(), obs.gs_image_file(), obs.gs_image_file() });
 end
 
 source_def.show = function(source, settings) random_perks_config.trigger_reset = true end
@@ -80,19 +67,15 @@ source_def.get_width = function(data) return 1040 end
 source_def.get_height = function(data) return 250 end
 
 source_def.destroy = function(data)
-	obs.obs_enter_graphics();
-    obs.gs_image_file_free(data.image[1]);
-	obs.gs_image_file_free(data.image[2]);
-	obs.gs_image_file_free(data.image[3]);
-    obs.gs_image_file_free(data.image[4]);
+    obs.obs_enter_graphics();
+    for i = 1, 4, 1 do obs.gs_image_file_free(data[i]) end
     random_perks_config.data = nil;
     set_text("");
 	obs.obs_leave_graphics();
 end
 
 source_def.video_render = function(data, effect)
-    if not data.image[1].texture or random_perks_config.asset_path == nil then return end
-    
+    if not data[1].texture or random_perks_config.asset_path == nil then return end
     local str = nil;
     local random_indexes = { 0, 0, 0, 0 };
     effect = obs.obs_get_base_effect(obs.OBS_EFFECT_DEFAULT);
@@ -102,58 +85,53 @@ source_def.video_render = function(data, effect)
         random_perks_config.trigger_reset = false;
         random_perks_config.loops = 0;
         math.randomseed(os.time());
-        math.random(1, 100);
-        math.random(1, 100);
-        math.random(1, 100);
+        for i = 1, math.random(80, 100), 1 do math.random(1, i) end
     end
 
+    local perk = { ONE = 1, TWO = 2, THREE = 3, FOUR = 4 };
     if random_perks_config.random_perks == nil then goto render end
-
     -- perk 1
-    while random_perks_config.random_perks[random_indexes[1]] == nil
+    while random_perks_config.random_perks[random_indexes[perk.ONE]] == nil
     do
-        random_indexes[1] = math.random(1, random_perks_config.perk_count);
+        random_indexes[perk.ONE] = math.random(1, random_perks_config.perk_count);
     end
-    image_source_load(data.image[1], perk_path(random_perks_config.random_perks[random_indexes[1]].image));
+    image_source_load(data[perk.ONE], perk_path(random_perks_config.random_perks[random_indexes[perk.ONE]].image));
 
     -- perk 2
-    while random_perks_config.random_perks[random_indexes[2]] == nil
+    while random_perks_config.random_perks[random_indexes[perk.TWO]] == nil
     do
-        random_indexes[2] = math.random(1, random_perks_config.perk_count)
-        if random_indexes[2] == random_indexes[1] then 
-            random_indexes[2] = 0;
-        end
+        random_indexes[perk.TWO] = math.random(1, random_perks_config.perk_count)
+        if random_indexes[perk.TWO] == random_indexes[perk.ONE] then random_indexes[perk.TWO] = 0 end
     end
-    image_source_load(data.image[2], perk_path(random_perks_config.random_perks[random_indexes[2]].image));
+    image_source_load(data[perk.TWO], perk_path(random_perks_config.random_perks[random_indexes[perk.TWO]].image));
 
     -- perk 3
-    while random_perks_config.random_perks[random_indexes[3]] == nil
+    while random_perks_config.random_perks[random_indexes[perk.THREE]] == nil
     do
-        random_indexes[3] = math.random(1, random_perks_config.perk_count);
-        if random_indexes[3] == random_indexes[1] or random_indexes[3] == random_indexes[2] then
-            random_indexes[3] = 0;
-        end
+        random_indexes[perk.THREE] = math.random(1, random_perks_config.perk_count);
+        if random_indexes[perk.THREE] == random_indexes[perk.ONE] or 
+           random_indexes[perk.THREE] == random_indexes[perk.TWO] then random_indexes[perk.THREE] = 0 end
     end
-    image_source_load(data.image[3], perk_path(random_perks_config.random_perks[random_indexes[3]].image));
+    image_source_load(data[perk.THREE], perk_path(random_perks_config.random_perks[random_indexes[perk.THREE]].image));
 
     -- perk 4
-    while random_perks_config.random_perks[random_indexes[4]] == nil
+    while random_perks_config.random_perks[random_indexes[perk.FOUR]] == nil
     do
-        random_indexes[4] = math.random(1, random_perks_config.perk_count);
-        if random_indexes[4] == random_indexes[1] or random_indexes[4] == random_indexes[2] or random_indexes[4] == random_indexes[3] then
-            random_indexes[4] = 0;
-        end
+        random_indexes[perk.FOUR] = math.random(1, random_perks_config.perk_count);
+        if random_indexes[perk.FOUR] == random_indexes[perk.ONE] or 
+           random_indexes[perk.FOUR] == random_indexes[perk.TWO] or 
+           random_indexes[perk.FOUR] == random_indexes[perk.THREE] then random_indexes[perk.FOUR] = 0 end
     end
-    image_source_load(data.image[4], perk_path(random_perks_config.random_perks[random_indexes[4]].image));
+    image_source_load(data[perk.FOUR], perk_path(random_perks_config.random_perks[random_indexes[perk.FOUR]].image));
 
     random_perks_config.loops = random_perks_config.loops + 1;
     if random_perks_config.loops == 1 then set_text("") end
     if random_perks_config.loops ~= 50 then goto render end
 
-    str = random_perks_config.random_perks[random_indexes[1]].lang[random_perks_config.language];
-    str = str .. "\n" ..  random_perks_config.random_perks[random_indexes[2]].lang[random_perks_config.language];
-    str = str .. "\n" .. random_perks_config.random_perks[random_indexes[3]].lang[random_perks_config.language];
-    str = str .. "\n" .. random_perks_config.random_perks[random_indexes[4]].lang[random_perks_config.language];
+    str =                random_perks_config.random_perks[random_indexes[perk.ONE]].lang[random_perks_config.language];
+    str = str .. "\n" .. random_perks_config.random_perks[random_indexes[perk.TWO]].lang[random_perks_config.language];
+    str = str .. "\n" .. random_perks_config.random_perks[random_indexes[perk.THREE]].lang[random_perks_config.language];
+    str = str .. "\n" .. random_perks_config.random_perks[random_indexes[perk.FOUR]].lang[random_perks_config.language];
     print(str);
     set_text(str);
 
@@ -164,13 +142,10 @@ source_def.video_render = function(data, effect)
     ::render::
     while obs.gs_effect_loop(effect, "Draw") do
         local yOffset = 0;
-        obs.obs_source_draw(data.image[1].texture, yOffset, 0, data.image[1].cx, data.image[1].cy, false);
-        yOffset = yOffset + data.image[1].cy;
-        obs.obs_source_draw(data.image[2].texture, yOffset, 0, data.image[2].cx, data.image[2].cy, false);
-        yOffset = yOffset + data.image[2].cy;
-        obs.obs_source_draw(data.image[3].texture, yOffset, 0, data.image[3].cx, data.image[3].cy, false);
-        yOffset = yOffset + data.image[3].cy;
-        obs.obs_source_draw(data.image[4].texture, yOffset, 0, data.image[4].cx, data.image[4].cy, false);
+        for i = 1, 4, 1 do 
+            obs.obs_source_draw(data[i].texture, yOffset, 0, data[i].cx, data[i].cy, false);
+            yOffset = yOffset + data[i].cy;
+        end
     end
     
 	obs.gs_blend_state_push();
@@ -208,9 +183,7 @@ function script_update(settings)
     random_perks_config.text_source = obs.obs_data_get_string(settings, "source");
     random_perks_config.asset_path = obs.obs_data_get_string(settings, "asset_path") .. '\\';
     local lang = obs.obs_data_get_string(settings, "lang");
-    if lang == 'English' then random_perks_config.language = 1 end
-    if lang == '日本語' then random_perks_config.language = 2 end
-    if lang == 'Deutsch' then random_perks_config.language = 3 end
+    for i = 1, 3, 1 do if lang == random_perks_config.languages[i] then random_perks_config.language = i end end
     if random_perks_config.asset_path == '.' then random_perks_config.asset_path = script_path() end
     random_perks_config.trigger_reset = true;
 end
@@ -220,7 +193,6 @@ function script_load(settings)
 	local hotkey_save_array = obs.obs_data_get_array(settings, "survivor_random_perks.trigger");
 	obs.obs_hotkey_load(survivor_random_perks_hotkey_id, hotkey_save_array);
     obs.obs_data_array_release(hotkey_save_array);
-
     killer_random_perks_hotkey_id = obs.obs_hotkey_register_frontend("killer_random_perks.trigger", "Killer Random Perks", killer_random_perks);
     hotkey_save_array = obs.obs_data_get_array(settings, "killer_random_perks.trigger");
 	obs.obs_hotkey_load(killer_random_perks_hotkey_id, hotkey_save_array);
@@ -231,7 +203,6 @@ function script_save(settings)
 	local hotkey_save_array = obs.obs_hotkey_save(survivor_random_perks_hotkey_id);
 	obs.obs_data_set_array(settings, "survivor_random_perks.trigger", hotkey_save_array);
     obs.obs_data_array_release(hotkey_save_array);
-
 	hotkey_save_array = obs.obs_hotkey_save(killer_random_perks_hotkey_id);
 	obs.obs_data_set_array(settings, "killer_random_perks.trigger", hotkey_save_array);
     obs.obs_data_array_release(hotkey_save_array);
@@ -241,29 +212,23 @@ function script_properties()
 	local props = obs.obs_properties_create();
 	local p = obs.obs_properties_add_list(props, "source", "Text Source", obs.OBS_COMBO_TYPE_EDITABLE, obs.OBS_COMBO_FORMAT_STRING);
 	local sources = obs.obs_enum_sources();
-    
     if sources == nil then goto release end
     for _, source in ipairs(sources) do
         source_id = obs.obs_source_get_unversioned_id(source);
-        if source_id == "text_gdiplus" or source_id == "text_ft2_source" then goto continue end
+        if source_id ~= "text_gdiplus" and source_id ~= "text_ft2_source" then goto continue end
         local name = obs.obs_source_get_name(source);
         obs.obs_property_list_add_string(p, name, name);
         ::continue::
     end
-
     ::release::
     obs.source_list_release(sources);
-
     p = obs.obs_properties_add_list(props, "lang", "Language", obs.OBS_COMBO_TYPE_EDITABLE, obs.OBS_COMBO_FORMAT_STRING);
-    obs.obs_property_list_add_string(p, "English", "en");
-    obs.obs_property_list_add_string(p, "日本語", "jp");
-    obs.obs_property_list_add_string(p, "Deutsch", "de");
+    for i = 1, 3, 1 do obs.obs_property_list_add_string(p, random_perks_config.languages[i], random_perks_config.languages[i]) end
     local default_path = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Dead by Daylight\\DeadByDaylight\\Content\\UI\\Icons";
 	obs.obs_properties_add_path(props, "asset_path", "Asset Path", obs.OBS_PATH_DIRECTORY, nil, default_path);
     obs.obs_properties_add_button(props, "survivor_random_perk_button", "Survivor", survivor_button_clicked);
     obs.obs_properties_add_button(props, "killer_random_perk_button", "Killer", killer_button_clicked);
     obs.obs_properties_add_button(props, "reset_button", "Reset", reset_button_clicked);
-
 	return props;
 end
 
